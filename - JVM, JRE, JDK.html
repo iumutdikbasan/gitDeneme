@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>- JVM, JRE, JDK</h1>
+    <h2>JDK(Java Development Kit)</h2>
+    <p>Java da platformlar arası gerekli kütüphaneler ve toolları içeren bir geliştirme çevresidir.</p>
+    <h3>JDK'nın içerdikleri </h3>
+    <ul>
+        <li>Java Runtime Environment</li>
+        <li>Yorumlayıcı(Java)</li>
+        <li>Derleyici(javac)</li>
+        <li>Archiver(jar)</li>
+    </ul>
+    <h2>JRE(Java Runtime Environment</h2>
+    <p>Java programlarının düzgün çalışması için gereken bir yazılımdır.</p>
+    <p>JRE Neden önemlidir ? </p>
+    <p>JRE Olmadan önce her bir işletim sistemi için ayrı bir kod yazmak gerekirdi.JRE buna çözüm olarak sunuldu.</p>
+    <p>JRE Nasıl çalışır ?</p>
+    <p>Java Geliştirme Kiti (JDK) ve JRE, Java program dosyalarını
+        herhangi bir makinede çalıştıran sürdürülebilir bir çalışma zamanı ortamı oluşturmak için etkileşime girer.
+        JRE, çalışmak için üç temel bileşen kullanır.</p>
+    <h3>ClassLoader</h3>
+    <p>Java sınıf kitaplıkları, gerektiğinde arayabileceğiniz önceden yazılmış kod koleksiyonları içerir.
+        Kullanıcılardan girdi alma, kullanıcılara çıktı gösterme ve daha fazlası gibi yaygın ve önemsiz olmayan görevler için
+        yerleşik yöntemler sağlayarak Java geliştiricilerinin işini basitleştirirler. Tüm Java programları çeşitli sınıf kitaplıklarına başvurur.
+        Java ClassLoader, gerekli tüm sınıf dosyalarını talep üzerine Java Sanal Makinesi'ne (JVM) dinamik olarak yükler.</p>
+    <h3>Bytecode doğrulayıcı</h3>
+    <p>JRE'deki bayt kodu doğrulayıcısı, Java kodunu JVM'ye yüklemeden önce biçimini ve doğruluğunu kontrol eder. </p>
+    <h3>Yorumlayıcı</h3>
+    <p>Bayt kodu başarıyla yüklendikten sonra Java yorumlayıcısı temel makinede Java programını çalıştıran JVM bulut sunucusunu oluşturur.</p>
+    <h2>JVM(Java Virtual Machine)</h2>
+    <p>JVM, bilgisayarınızda bulunan bir sanal makinedir ve kullandığı makine dili ise bayt kodudur. Bu her farklı tip makine için farklı bir makine kodu yaratmak yerine JVM için sadece bayt kodu üretmesi gerektiğinden derleyicinin işini kolaylaştırır.
+        JVM, derleyici tarafından üretilen bayt kodunu çalıştırır ve bir çıktı üretir.
+        Yani Java’nın platform bağımsız çalışmasını sağlayan kişidir diyebiliriz.</p>
+    <img src="Screenshot%202023-06-19%20132411.png" alt="">
+    <img src="jdk-jvm.png" alt="" width="600" height="500">
+</body>
+</html>
