@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Dizinin en yüksek elemanını bulan uygulama</h1>
+<pre>class Q1 {
+static int[] arr ={-5,1,5,0,-7};
+    static int largest() {
+        int i;
+        int max = arr[0];
+        for (i = 1; i < arr.length; i++) {
+            if (arr[i] > max)
+                max = arr[i];
+
+        }
+        return max;
+    }
+
+     public static void main(String[] args) {
+         System.out.println(largest());
+     }
+}</pre>
+<br>
+<br>
+<pre>C:\Users\udikbasan\.jdks\openjdk-20.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.2\lib\idea_rt.jar=52083:C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\udikbasan\IdeaProjects\Week 1\src\out\production\Week 1" Q1
+5
+
+Process finished with exit code 0
+</pre>
+</body>
+</html>
